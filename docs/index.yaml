@@ -1,0 +1,106 @@
+apiVersion: v1
+entries:
+  llmboost:
+  - apiVersion: v2
+    appVersion: 1.6.0
+    created: "2025-12-17T18:37:10.37938498Z"
+    dependencies:
+    - alias: nfd
+      condition: nfd.enabled
+      name: node-feature-discovery
+      repository: oci://registry.k8s.io/nfd/charts
+      version: 0.18.3
+    - name: amd-gpu
+      repository: https://rocm.github.io/k8s-device-plugin
+      version: 0.20.0
+    - name: nvidia-device-plugin
+      repository: https://nvidia.github.io/k8s-device-plugin
+      version: v0.17.1
+    - alias: ingress
+      name: ingress-nginx
+      repository: https://kubernetes.github.io/ingress-nginx
+      version: 4.14.1
+    - alias: monitoring
+      name: kube-prometheus-stack
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 72.4.0
+    - alias: nvidia-metrics
+      name: dcgm-exporter
+      repository: https://nvidia.github.io/dcgm-exporter/helm-charts
+      version: 4.5.2
+    - alias: amd-metrics
+      name: device-metrics-exporter-charts
+      repository: https://rocm.github.io/device-metrics-exporter
+      version: v1.4.0
+    description: LLMBoost helm chart for multinode deployment
+    digest: 305e147d75cdaee7a22960ba6dcfe04f511cbd92797911d8151cc8b22053d674
+    name: llmboost
+    type: application
+    urls:
+    - https://mangoboost.github.io/llmboost-helm/llmboost-0.1.1-dev.20251217.tgz
+    version: 0.1.1-dev.20251217
+  - apiVersion: v2
+    appVersion: 1.6.0
+    created: "2025-12-17T18:37:10.344384974Z"
+    dependencies:
+    - name: amd-gpu
+      repository: https://rocm.github.io/k8s-device-plugin
+      version: 0.20.0
+    - name: nvidia-device-plugin
+      repository: https://nvidia.github.io/k8s-device-plugin
+      version: v0.17.1
+    - alias: ingress
+      name: ingress-nginx
+      repository: https://kubernetes.github.io/ingress-nginx
+      version: 4.14.1
+    - alias: monitoring
+      name: kube-prometheus-stack
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 72.4.0
+    - alias: nvidia-metrics
+      name: dcgm-exporter
+      repository: https://nvidia.github.io/dcgm-exporter/helm-charts
+      version: 4.5.2
+    - alias: amd-metrics
+      name: device-metrics-exporter-charts
+      repository: https://rocm.github.io/device-metrics-exporter
+      version: v1.4.0
+    description: LLMBoost helm chart for multinode deployment
+    digest: a9648c5431a90038e78e943ed9547d009cb7139503a89abe9217d913e571c5ae
+    name: llmboost
+    type: application
+    urls:
+    - https://mangoboost.github.io/llmboost-helm/llmboost-0.1.1-dev.20251215.tgz
+    version: 0.1.1-dev.20251215
+  - apiVersion: v2
+    appVersion: 1.6.0
+    created: "2025-12-17T18:37:10.311344886Z"
+    dependencies:
+    - name: amd-gpu
+      repository: https://rocm.github.io/k8s-device-plugin
+      version: 0.20.0
+    - name: nvidia-device-plugin
+      repository: https://nvidia.github.io/k8s-device-plugin
+      version: v0.17.1
+    - alias: ingress
+      name: ingress-nginx
+      repository: https://kubernetes.github.io/ingress-nginx
+      version: 4.14.1
+    - alias: monitoring
+      name: kube-prometheus-stack
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 72.4.0
+    - name: dcgm-exporter
+      repository: https://nvidia.github.io/dcgm-exporter/helm-charts
+      version: 4.5.2
+    - name: device-metrics-exporter-charts
+      repository: https://rocm.github.io/device-metrics-exporter
+      version: v1.4.0
+    description: LLMBoost helm chart for multinode deployment
+    digest: f218f3a2792fe7f1fedf2cdeb695e76694525fababb9946dc0d561b5b2131645
+    name: llmboost
+    type: application
+    urls:
+    - https://mangoboost.github.io/llmboost-helm/llmboost-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-12-17T18:37:10.274584857Z"
