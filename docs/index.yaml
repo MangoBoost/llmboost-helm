@@ -3,19 +3,14 @@ entries:
   llmboost:
   - apiVersion: v2
     appVersion: 1.6.0
-    created: "2025-12-17T18:37:10.37938498Z"
+    created: "2025-12-18T01:59:06.914268031Z"
     dependencies:
-    - alias: nfd
-      condition: nfd.enabled
-      name: node-feature-discovery
-      repository: oci://registry.k8s.io/nfd/charts
-      version: 0.18.3
     - name: amd-gpu
       repository: https://rocm.github.io/k8s-device-plugin
       version: 0.20.0
     - name: nvidia-device-plugin
       repository: https://nvidia.github.io/k8s-device-plugin
-      version: v0.17.1
+      version: v0.18.0
     - alias: ingress
       name: ingress-nginx
       repository: https://kubernetes.github.io/ingress-nginx
@@ -33,7 +28,7 @@ entries:
       repository: https://rocm.github.io/device-metrics-exporter
       version: v1.4.0
     description: LLMBoost helm chart for multinode deployment
-    digest: 305e147d75cdaee7a22960ba6dcfe04f511cbd92797911d8151cc8b22053d674
+    digest: 28f639e70edf7c9e6a319c88b81dadf1908de329b3802952e3c6306218def073
     name: llmboost
     type: application
     urls:
@@ -41,7 +36,7 @@ entries:
     version: 0.1.1-dev.20251217
   - apiVersion: v2
     appVersion: 1.6.0
-    created: "2025-12-17T18:37:10.344384974Z"
+    created: "2025-12-18T01:59:06.881717514Z"
     dependencies:
     - name: amd-gpu
       repository: https://rocm.github.io/k8s-device-plugin
@@ -74,7 +69,7 @@ entries:
     version: 0.1.1-dev.20251215
   - apiVersion: v2
     appVersion: 1.6.0
-    created: "2025-12-17T18:37:10.311344886Z"
+    created: "2025-12-18T01:59:06.849246175Z"
     dependencies:
     - name: amd-gpu
       repository: https://rocm.github.io/k8s-device-plugin
@@ -103,4 +98,4 @@ entries:
     urls:
     - https://mangoboost.github.io/llmboost-helm/llmboost-0.1.0.tgz
     version: 0.1.0
-generated: "2025-12-17T18:37:10.274584857Z"
+generated: "2025-12-18T01:59:06.81123476Z"
