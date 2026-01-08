@@ -3,7 +3,40 @@ entries:
   llmboost:
   - apiVersion: v2
     appVersion: 1.7.0
-    created: "2026-01-03T02:10:50.065479908Z"
+    created: "2026-01-08T22:25:44.472979049Z"
+    dependencies:
+    - name: amd-gpu
+      repository: https://rocm.github.io/k8s-device-plugin
+      version: 0.20.0
+    - name: nvidia-device-plugin
+      repository: https://nvidia.github.io/k8s-device-plugin
+      version: v0.18.0
+    - alias: ingress
+      name: ingress-nginx
+      repository: https://kubernetes.github.io/ingress-nginx
+      version: 4.14.1
+    - alias: monitoring
+      name: kube-prometheus-stack
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 72.4.0
+    - alias: nvidia-metrics
+      name: dcgm-exporter
+      repository: https://nvidia.github.io/dcgm-exporter/helm-charts
+      version: 4.5.2
+    - alias: amd-metrics
+      name: device-metrics-exporter-charts
+      repository: https://rocm.github.io/device-metrics-exporter
+      version: v1.4.0
+    description: LLMBoost helm chart for multinode deployment
+    digest: 55edbfda5d254e7465fe7601bfd6fb3d01e34b259ec2a6c7338670df639890c9
+    name: llmboost
+    type: application
+    urls:
+    - https://mangoboost.github.io/llmboost-helm/llmboost-0.3.1-dev20260108.tgz
+    version: 0.3.1-dev20260108
+  - apiVersion: v2
+    appVersion: 1.7.0
+    created: "2026-01-08T22:25:44.438986692Z"
     dependencies:
     - name: amd-gpu
       repository: https://rocm.github.io/k8s-device-plugin
@@ -36,7 +69,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 1.7.0
-    created: "2026-01-03T02:10:50.0322141Z"
+    created: "2026-01-08T22:25:44.377020016Z"
     dependencies:
     - name: amd-gpu
       repository: https://rocm.github.io/k8s-device-plugin
@@ -69,7 +102,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.6.0
-    created: "2026-01-03T02:10:49.99802024Z"
+    created: "2026-01-08T22:25:44.319312689Z"
     dependencies:
     - name: amd-gpu
       repository: https://rocm.github.io/k8s-device-plugin
@@ -102,7 +135,7 @@ entries:
     version: 0.1.1-dev.20251218
   - apiVersion: v2
     appVersion: 1.6.0
-    created: "2026-01-03T02:10:49.962939918Z"
+    created: "2026-01-08T22:25:44.262586653Z"
     dependencies:
     - name: amd-gpu
       repository: https://rocm.github.io/k8s-device-plugin
@@ -135,7 +168,7 @@ entries:
     version: 0.1.1-dev.20251217
   - apiVersion: v2
     appVersion: 1.6.0
-    created: "2026-01-03T02:10:49.877395873Z"
+    created: "2026-01-08T22:25:44.190745272Z"
     dependencies:
     - name: amd-gpu
       repository: https://rocm.github.io/k8s-device-plugin
@@ -168,7 +201,7 @@ entries:
     version: 0.1.1-dev.20251215
   - apiVersion: v2
     appVersion: 1.6.0
-    created: "2026-01-03T02:10:49.835554326Z"
+    created: "2026-01-08T22:25:44.155637223Z"
     dependencies:
     - name: amd-gpu
       repository: https://rocm.github.io/k8s-device-plugin
@@ -197,4 +230,4 @@ entries:
     urls:
     - https://mangoboost.github.io/llmboost-helm/llmboost-0.1.0.tgz
     version: 0.1.0
-generated: "2026-01-03T02:10:49.738019815Z"
+generated: "2026-01-08T22:25:44.080983Z"
